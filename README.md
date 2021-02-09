@@ -1,2 +1,4 @@
 # JavaFundamental
-JAVA fundamental code
+JAVA fundamental code <br><br>
+
+Go to master branch.
