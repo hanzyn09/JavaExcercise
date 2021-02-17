@@ -15,9 +15,23 @@ public class Earnary {
 		int num1 = 10;
 		int num2 = -10;
 		
-		String result1 = (num1 > num2) ? "pos" : "neg";
+		String result1 = (num1 > 0) ? "pos" : "neg";
+		String result2 = (num2 > 0) ? "pos" : "neg";
 		
 		System.out.println(result1);
+		System.out.println(result2);
+		
+		//삼항연산자는 중첩도 가능.
+		int num3 = 5;
+		int num4 = 0;
+		int num5 = -5;
+		String result3 = (num3 > 0) ? "pos" : ( (num3 == 0)  ?  "zero" : "neg");
+		String result4 = (num4 > 0) ? "pos" : ( (num4 == 0)  ?  "zero" : "neg");
+		String result5 = (num5 > 0) ? "pos" : ( (num5 == 0)  ?  "zero" : "neg");
+		
+		System.out.println(result3);
+		System.out.println(result4);
+		System.out.println(result5);
 	}
 
 }
