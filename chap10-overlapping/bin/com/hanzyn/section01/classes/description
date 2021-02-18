@@ -1,0 +1,52 @@
+내부(중첩)클래스의 구조
+
+class 클래스명{
+	class 내부클래스명{
+	
+	}
+}
+
+
+
+내부 클래스는 두가지로 구분된다.
+1. 멤버 클래스 : 클래스의 멤버로 정의됨.
+			객체로 생성된 후 어디서든 다시 사용할 수 있다.
+			e.g. 바깥클래스명$내부클래스명.class
+2. 로컬 클래스 : 메서드 내부에 정의됨
+			메서드 내에서만 사용된다.
+			e.g. 바깥클래스명$1내부클래스명.class
+두가지 모두 정의되고 컴파일되면 실제 파일도 별도로 생성된다.
+
+
+
+멤버 클래스는 두가지로 나눠진다.
+1. static 멤버 클래스 (static inner class)
+	: 내부 클래스의 객체를 바깥 클래스에 대해 독립적으로 생성할 때 사용.
+	static 키워드를 가진 내부 클래스이다. 멤버변수나 메서드처럼 클래스 내부에서 선언된다.
+	내부 클래스 내에 static 멤버가 있으면 반드시 static 내부 클래스로 선언해야 한다.
+	e.g.	public class Outer{
+				//outer 클래스의 내용
+				...
+				public static class Inner{
+					//inner 클래스의 내용
+				}
+			}
+	다른 곳에서 inner class의 객체를 생성하기 위해 inner class에 접근하려면 아래와 같이 객체를 생성한다.
+	Outer.inner inn = new Outer.Inner();
+			
+2. 인스턴스 내부 클래스
+	: static 내부 클래스와 같은 위치에 선언하지만, static 키워드가 포함되지않느다.
+	e.g.	public class Outer{
+				//Outer 클래스의 내용
+				...
+				public class Inner{
+					//Inner 클래스의 내용
+				}
+			}
+	다른 곳에서 안쪽 클래스의 객체를 생성하기 위해서는, 바깥 클래스의 객체를 먼저 생성하고,
+	그 객체변수를 이용해서 내부 클래스의 객체를 생성한다.
+	Outer outer = new Outer();
+	Outer.inner in = new outer.in.Inner();
+	
+
+로컬 믈래스는 예제를 통해 참고.
