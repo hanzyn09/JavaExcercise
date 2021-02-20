@@ -21,6 +21,7 @@ class Excercise{
 		System.out.println("객체 생성");
 	}
 	
+	//이 부분 만 있어도 ok
 	public static Excercise getInstance() {
 		System.out.println("객체 리턴");
 		return instance;
