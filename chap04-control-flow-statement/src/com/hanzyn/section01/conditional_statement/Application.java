@@ -8,6 +8,7 @@ public class Application {
 		a.testNestedIfStatement();
 		
 		B_ifElse b = new B_ifElse();
+		b.testSimpleIfElseStatement();
 		b.testNestedIfElseStatement();
 	}
 
