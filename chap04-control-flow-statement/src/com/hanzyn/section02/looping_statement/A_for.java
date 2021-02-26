@@ -252,13 +252,19 @@ public class A_for {
 		}
 		System.out.println("sum2 : " + sum2);
 		
+	
+	}
+	public void printSimpleGugudan() {
+		/* 키보드로 2-9사이의 구구단을 입력받아 출력, 그렇지 않은 경우 2-9 입력하라고 출력*/
+		Scanner sc = new Scanner(System.in);
+		System.out.print("2~9 사이의 정수 입력 : ");
+		int num = sc.nextInt();
 		
-		
-		
-		
-		
-		
-		
+		if((2<=num) && (num<=9)) {
+			for (int i=1; i<10; i++) {
+				System.out.println(num + " * " + i + " = " + num*i);
+			}
+		}else System.out.println("2-9 사이의 값 출력");
 		
 	}
 }

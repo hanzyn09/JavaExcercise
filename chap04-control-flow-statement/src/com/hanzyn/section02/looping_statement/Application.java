@@ -8,6 +8,23 @@ public class Application {
 		//a.testForExample1();
 		//a.testForExample2();
 		//a.testForExample3();
-		a.testForExample4();
+		//a.testForExample4();
+		//a.printSimpleGugudan();
+		
+		A_nestedFor aa = new A_nestedFor();
+		//aa.printGugudanFromTwoToNine();
+		//aa.printUpgradeGugudanFromTwoToNine();
+		//aa.printStarInputRowTimes();
+		//aa. printTriangleStars();
+		
+		B_while b = new B_while();
+		//b.testSimpleWhileStatement();
+		//b.testWhileExample1();
+		//b.testWhileExample2();
+		//b.testWhileExample3();
+		
+		C_doWhile c = new C_doWhile();
+		//c.testSimpleDoWhileStatement();
+		c.testSimpleDoWhileExample1();
 	}
 }
