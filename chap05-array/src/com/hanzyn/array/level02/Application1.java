@@ -36,9 +36,13 @@ public class Application1 {
 		
 		char[] carray = new char[size];
 		
+		
 		for(int i = 0 ; i < carray.length ; i++) {
 			carray[i] = str.charAt(i);
 		}
+		// 위와 동일
+		
+		char carr[] = str.toCharArray();
 		
 		for(int i = 0 ; i < carray.length ; i++) {
 			if(carray[i] == ch)

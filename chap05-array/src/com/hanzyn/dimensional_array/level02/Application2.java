@@ -67,6 +67,27 @@ public class Application2 {
 			
 		return temp;
 		
+		/*
+		 * 다음과 같이 사용할 수도 있다.
+		 * 
+		 * int ctn = 0;
+
+			for(int i = 0; i < part1.length; i++) {
+				for(int j = 0; j < part1[i].length; j++) {
+					part1[i][j] = student[ctn];
+					ctn++;
+				}
+			}
+			
+			for(int i = 0; i < part2.length; i++) {
+				for(int j = 0; j < part2[i].length; j++) {
+					part2[i][j] = student[ctn];
+					ctn++;
+				}
+			}
+			
+		 * */
+		
 	}
 	
 	public static String[][] store(String[] t, String[][] arr) {

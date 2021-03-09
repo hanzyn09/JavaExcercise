@@ -52,6 +52,10 @@ public class Application1 {
 			for(int i = 0 ; i < r ; i++) {
 				for(int j = 0; j < c ; j++) {
 					arr[i][j] = (char) ((Math.random() * 26) + 65);
+					// 다음과 같이 선언 할 수 도 있다.
+					// Random r = new Random();
+					// (char)(c + r.nextInt(26));
+					
 				    System.out.print(arr[i][j] + " ");
 				}System.out.println();
 		}

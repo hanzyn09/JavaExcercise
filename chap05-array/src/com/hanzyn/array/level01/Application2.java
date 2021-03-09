@@ -48,6 +48,12 @@ public class Application2 {
 			
 		}
 		
+		if((choice >= 0) && (choice <= 4)){
+			System.out.println(fruit[choice]);
+		} else {
+			System.out.println("준비된 과일이 없습니다.");
+		}
+		
 		
 	}
 

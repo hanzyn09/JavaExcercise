@@ -26,6 +26,7 @@ public class Application2 {
 	
 	public static void print(String id) {
 		char[] carr = new char[14];
+		
 			
 		for(int i = 0 ; i <carr.length; i++) {
 			if(i >= 8) 
@@ -35,6 +36,9 @@ public class Application2 {
 				
 			System.out.print(carr[i]);
 		}
+		
+		//다음과 같은 방법이 있다.
+		char crr[] = id.toCharArray();
 	}
 
 }
