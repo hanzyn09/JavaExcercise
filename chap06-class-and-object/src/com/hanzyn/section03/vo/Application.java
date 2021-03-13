@@ -16,7 +16,25 @@ public class Application {
 		 * 필드에 접근하는 접근자 == getter들로 구성.
 		 * */
 		
-		Member m1 = new Member();
+		Member member = new Member();
+		member.setActivated(false);
+		member.setAge(10);
+		member.setGender('F');
+		member.setHeight(160);
+		member.setName("han");
+		member.setNumber(1234);
+		member.setWeight(40);
+		
+		int age = member.getAge();
+		char gender = member.getGender();
+		double weight = member.getWeight();
+		double height = member.getHeight();
+		int num = member.getNumber();
+		String name = member.getName();
+		boolean act = member.isActivated();
+		
+		System.out.println(age + " " + gender + " " + weight + " " + height + " " 
+					+ num + " " + name + " " + act);
 	}
 
 }
