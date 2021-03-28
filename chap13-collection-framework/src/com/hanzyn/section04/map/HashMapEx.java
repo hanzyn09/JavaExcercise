@@ -3,6 +3,7 @@ package com.hanzyn.section04.map;
 import java.util.HashMap;
 import java.util.Map;
 
+//map 에 push, get 하기
 public class HashMapEx {
 	/* [Map]
 	 * : 키(Key)와 값(Value) 쌍으로 저장
