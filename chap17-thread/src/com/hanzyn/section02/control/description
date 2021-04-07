@@ -1,0 +1,8 @@
+스레드 프로그래밍이 어려운 이유는 스레드의 상태를 제어하는 부분에서 발생한다.
+상태 제어가 잘못되면 프로그램이 멈추거나 중지되고, 프로그램의 버그를 일으키는 중요한 원인이 된다.
+
+interrupt(), notify(), resume() ,sleep(): 매개 변수 시간동안 일시 정지,
+join(), wait(): 동기화 블록 내에서 일시 정지, suspend(), yield(), stop() 이 있다.
+
+resume(), stop(), suspend() 는 교착상태가 발생할 수 있어서 deprecated 되어 다른 메서드로 대체하여 사용해야한다.
+wait(), notify(), notifyAll() 은 Object 클래스의 메서드여서 동기화 메서드 및 동기화 블록에서만 사용할 수 있다.
