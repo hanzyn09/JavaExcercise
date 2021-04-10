@@ -16,8 +16,8 @@ public class Application4 {
 		float math = 50.6f;
 		float english = 70.8f;
 		
-		float sum = korean + math + english;
-		float avg = (int)(sum / 3);
+		float sum = korean + math + english; //(int) 합 해도 된다.
+		float avg = (sum / 3);
 		
 		System.out.println("총점 : " + (int)Math.floor(sum));
 		System.out.println("평균 : " + Math.round(avg));

@@ -12,7 +12,11 @@ public class Application3 {
 		 * */
 		
 		char ch = 'a';
+		
+		int unicode = ch;
+		
 		System.out.println("문자 "+ ch +"의 unicode: " + (byte)ch);
+		System.out.println(unicode);
 	}
 
 }

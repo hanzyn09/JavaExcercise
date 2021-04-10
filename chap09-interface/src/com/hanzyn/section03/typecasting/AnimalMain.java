@@ -19,8 +19,10 @@ public class AnimalMain {
 		eagle3.sleep();
 		eagle3.eat();
 		
-		
 
 	}
 
 }
+/*
+ * 강제 형변환
+ * 상속: 클래스 간, 구현: 인터페이스와 클래스간 상하위 관계에서 가능.*/
