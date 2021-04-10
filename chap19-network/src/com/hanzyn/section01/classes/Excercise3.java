@@ -15,7 +15,7 @@ public class Excercise3 {
 			
 			int data =0;
 			try {
-				Reader is = new InputStreamReader(___);
+				Reader is = new InputStreamReader(url.openStream());
 				while((data = is.read()) != -1) {
 					System.out.println((char)data);
 				}
@@ -23,9 +23,11 @@ public class Excercise3 {
 				
 			} catch(IOException e) {
 				e.printStackTrace();
-			}
+			} 
 		} catch(Exception e) {
-			System.out.println(e.getMessage());
-		}
+				System.out.println(e.getMessage());
+		} 
+		
 	}
 }
+
